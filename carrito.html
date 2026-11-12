@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - Tu Carrito</title>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">NIKE</div>
+        <!-- Enlace para regresar a la tienda -->
+        <a href="tienda-nike.html" class="btn-volver">← Seguir comprando</a>
+    </header>
+
+    <main class="container">
+        <h1>Tu Bolsa de Compras</h1>
+
+        <div id="contenido-carrito" class="cart-box">
+            <!-- Aquí se cargará el producto mediante JavaScript -->
+        </div>
+    </main>
+
+    <script>
+        // Obtener el producto guardado
+        const productoGuardado = localStorage.getItem('productoComprado');
+        const contenedor = document.getElementById('contenido-carrito');
+
+        if (productoGuardado) {
+            const producto = JSON.parse(productoGuardado);
+
+            contenedor.innerHTML = `
+                <div class="item-card">
+                    <img src="${producto.imagen}" alt="${producto.nombre}" class="item-img">
+                    <div class="item-details">
+                        <h2>${producto.nombre}</h2>
+                        <p>Talla: <strong>${producto.talla} cm</strong></p>
+                        <p class="precio">$${producto.precio.toLocaleString()}</p>
+                    </div>
+                </div>
+
+                <div class="resumen">
+                    <div class="total-row">
+                        <span>Total:</span>
+                        <span>$${producto.precio.toLocaleString()}</span>
+                    </div>
+                    <button class="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+                </div>
+            `;
+        } else {
+            contenedor.innerHTML = `
+                <p class="empty-msg">No has seleccionado ningún producto.</p>
+                <a href="tienda-nike.html" class="btn-comprar">Ver productos</a>
+            `;
+        }
+
+        function finalizarCompra() {
+            alert("¡Gracias por tu compra!");
+            localStorage.removeItem('productoComprado');
+            window.location.href = 'tienda-nike.html';
+        }
+    </script>
+</body>
+</html>

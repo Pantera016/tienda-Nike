@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Basquetbol</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- Navegacion -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">NIKE</div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Basquetbol</a></li>
+                <li><a href="#">LeBron James</a></li>
+                <li><a href="#">Ja Morant</a></li>
+                <li><a href="#">Kobe</a></li>
+                <li><a href="#">Kevin Durant</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Encabezado de la Seccion -->
+    <section class="catalog-header">
+        <h1>Tenis de Basquetbol</h1>
+        <p>Explora la ultima coleccion de tenis diseñados para el maximo rendimiento en la cancha.</p>
+    </section>
+
+    <!-- Catalogo de Productos -->
+    <main class="products-container">
+
+        <!-- Producto 1 -->
+        <div class="product-card">
+            <div class="badge red">Lo nuevo</div>
+            <div class="img-box">
+                <img src="Giannis immortality 5.jpeg" alt="Giannis Immortality 5">
+            </div>
+            <div class="product-info">
+                <h3>Giannis Immortality 5</h3>
+                <p class="category">Tenis de basquetbol</p>
+                <p class="price">$2,399</p>
+            </div>
+            <div class="purchase-box">
+            <select id="talla-giannis-immortality-5" class="select-size">
+              <option value="">Selecciona talla</option>
+              <option value="23">23 cm</option>
+              <option value="24">24 cm</option>
+              <option value="25">25 cm</option>
+              <option value="26">26 cm</option>
+              <option value="27">27 cm</option>
+              <option value="28">28 cm</option>
+              <option value="29">29 cm</option>
+            </select>
+            <button class="btn-comprar" onclick="comprarProducto('Giannis Immortality 5', 2399, 'Giannis immortality 5.jpeg', 'talla-giannis-immortality-5')">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-card">
+            <div class="badge red">Lo nuevo</div>
+            <div class="img-box">
+                <img src="Nike G.T.cut Academy 2.jpeg" alt="Nike G.T. Cut Academy 2">
+            </div>
+            <div class="product-info">
+                <h3>Nike G.T. Cut Academy 2</h3>
+                <p class="category">Tenis de basquetbol</p>
+                <p class="price">$2,099</p>
+            </div>
+            <div class="purchase-box">
+            <select id="talla-nike-gt-cut-academy-2" class="select-size">
+              <option value="">Selecciona talla</option>
+              <option value="23">23 cm</option>
+              <option value="24">24 cm</option>
+              <option value="25">25 cm</option>
+              <option value="26">26 cm</option>
+              <option value="27">27 cm</option>
+              <option value="28">28 cm</option>
+              <option value="29">29 cm</option>
+            </select>
+            <button class="btn-comprar" onclick="comprarProducto('Nike G.T. Cut Academy 2', 2099, 'Nike G.T.cut Academy 2.jpeg', 'talla-nike-gt-cut-academy-2')">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product-card">
+            <div class="img-box">
+                <img src="Book 2 x chevy.jpeg" alt="Book 2 x Chevy">
+            </div>
+            <div class="product-info">
+                <h3>Book 2 x Chevy</h3>
+                <p class="category">Tenis de basquetbol</p>
+                <p class="price">$3,499</p>
+            </div>
+            <div class="purchase-box">
+            <select id="talla-book-2-chevy" class="select-size">
+              <option value="">Selecciona talla</option>
+              <option value="23">23 cm</option>
+              <option value="24">24 cm</option>
+              <option value="25">25 cm</option>
+              <option value="26">26 cm</option>
+              <option value="27">27 cm</option>
+              <option value="28">28 cm</option>
+              <option value="29">29 cm</option>
+            </select>
+            <button class="btn-comprar" onclick="comprarProducto('Book 2 x Chevy', 3499, 'Book 2 x chevy.jpeg', 'talla-book-2-chevy')">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="product-card">
+            <div class="badge red">Lo mas vendido</div>
+            <div class="img-box">
+                <img src="LeBron XXIII.jpeg" alt="LeBron XXIII">
+            </div>
+            <div class="product-info">
+                <h3>LeBron XXIII</h3>
+                <p class="category">Tenis de basquetbol</p>
+                <p class="price">$4,599</p>
+            </div>
+            <div class="purchase-box">
+            <select id="talla-lebron-xxiii" class="select-size">
+              <option value="">Selecciona talla</option>
+              <option value="23">23 cm</option>
+              <option value="24">24 cm</option>
+              <option value="25">25 cm</option>
+              <option value="26">26 cm</option>
+              <option value="27">27 cm</option>
+              <option value="28">28 cm</option>
+              <option value="29">29 cm</option>
+            </select>
+            <button class="btn-comprar" onclick="comprarProducto('LeBron XXIII', 4599, 'LeBron XXIII.jpeg', 'talla-lebron-xxiii')">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="product-card">
+            <div class="badge orange">Personalizar</div>
+            <div class="img-box">
+                <img src="A'Two By A'ja.jpeg" alt="A'Two By A'ja">
+            </div>
+            <div class="product-info">
+                <h3>A'Two By A'ja</h3>
+                <p class="category">Tenis de basquetbol personalizables</p>
+                <p class="price">$3,899</p>
+            </div>
+            <div class="purchase-box">
+            <select id="talla-atwo-aja" class="select-size">
+              <option value="">Selecciona talla</option>
+              <option value="23">23 cm</option>
+              <option value="24">24 cm</option>
+              <option value="25">25 cm</option>
+              <option value="26">26 cm</option>
+              <option value="27">27 cm</option>
+              <option value="28">28 cm</option>
+              <option value="29">29 cm</option>
+           </select>
+           <button class="btn-comprar" onclick="comprarProducto('A\'Two By A\'ja', 3899, 'A\'Two By A\'ja.jpeg', 'talla-atwo-aja')">Comprar</button>
+           </div>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="product-card">
+            <div class="badge red">Lo nuevo</div>
+            <div class="img-box">
+                <img src="Ja 4 zombie.jpeg" alt="Ja 4 Zombie">
+            </div>
+            <div class="product-info">
+                <h3>Ja 4 "Zombie"</h3>
+                <p class="category">Tenis de basquetbol</p>
+                <p class="price">$3,299</p>
+            </div>
+            
+            <div class="purchase-box">
+            <select id="talla-ja-4-zombie" class="select-size">
+             <option value="">Selecciona talla</option>
+              <option value="23">23 cm</option>
+              <option value="24">24 cm</option>
+              <option value="25">25 cm</option>
+              <option value="26">26 cm</option>
+              <option value="27">27 cm</option>
+              <option value="28">28 cm</option>
+              <option value="29">29 cm</option>
+            </select>
+            <button class="btn-comprar" onclick="comprarProducto('Ja 4 Zombie', 3299, 'ja 4 zombie.jpeg', 'talla-ja-4-zombie')">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 7 -->
+         <!--Desde aqui el probl-->
+         
+        <div class="product-card">
+            <div class="badge red">Lo nuevo</div>
+            <div class="img-box">
+                <img src="Kobe 3 low protro.jpeg" alt="Kobe 3 Low Protro">
+            </div>
+            <div class="product-info">
+                <h3>Kobe 3 Low Protro "Mamba Eterno"</h3>
+                <p class="category">Tenis de basquetbol</p>
+                <p class="price">$4,399</p>
+            </div>
+            
+            <div class="purchase-box">
+            <select id="talla-kobe-3-low-protro" class="select-size">
+              <option value="">Selecciona talla</option>
+               <option value="23">23 cm</option>
+               <option value="24">24 cm</option>
+               <option value="25">25 cm</option>
+               <option value="26">26 cm</option>
+               <option value="27">27 cm</option>
+               <option value="28">28 cm</option>
+               <option value="29">29 cm</option>
+            </select>
+            <button class="btn-comprar" onclick="comprarProducto('Kobe 3 Low Protro', 4399, 'Kobe 3 low protro.jpeg', 'talla-kobe-3-low-protro')">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 8 -->
+        <div class="product-card">
+            <div class="badge orange">Producto para miembros</div>
+            <div class="img-box">
+                <img src="Kobe 3 protro.jpeg" alt="Kobe 3 Protro">
+            </div>
+            <div class="product-info">
+                <h3>Kobe 3 Protro</h3>
+                <p class="category">Tenis de basquetbol</p>
+                <p class="price">$4,599</p>
+            </div>
+            
+            <div class="purchase-box">
+            <select id="talla-Kobe-3-protro" class="select-size">
+                 <option value="">Selecciona talla</option>
+                 <option value="23">23 cm</option>
+                 <option value="24">24 cm</option>
+                 <option value="25">25 cm</option>
+                 <option value="26">26 cm</option>
+                 <option value="27">27 cm</option>
+                 <option value="28">28 cm</option>
+                 <option value="29">29 cm</option>
+                </select>
+                <button class="btn-comprar" onclick="comprarProducto('Kobe 3 protro', 4599, 'Kobe 3 Protro.jpeg','talla-Kobe-3-protro')">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 9 -->
+        <div class="product-card">
+            <div class="badge orange">Proximamente</div>
+            <div class="img-box">
+                <img src="KD19 slime reaper.jpeg" alt="KD19 Slim Reaper">
+            </div>
+            <div class="product-info">
+                <h3>KD19 "Slim Reaper"</h3>
+                <p class="category">Tenis de basquetbol</p>
+                <p class="price">$3,699</p>
+            </div>
+            
+            <div class="purchase-box">
+            <select id="talla-Kd19-slime" class="select-size">
+                <option value="">Selecciona talla</option>
+                  <option value="23">23 cm</option>
+                  <option value="24">24 cm</option>
+                  <option value="25">25 cm</option>
+                  <option value="26">26 cm</option>
+                  <option value="27">27 cm</option>
+                  <option value="28">28 cm</option>
+                  <option value="29">29 cm</option>
+                </select>
+                <button class="btn-comprar" onclick="comprarProducto('KD19 slime reaper', 3077, 'KD19 slime reaper.jpeg','talla-Kd19-slime')">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 10 -->
+        <div class="product-card">
+            <div class="badge red">Lo nuevo</div>
+            <div class="img-box">
+                <img src="KD 19 black.jpeg" alt="KD19 Black">
+            </div>
+            <div class="product-info">
+                <h3>KD19 "Black"</h3>
+                <p class="category">Tenis de basquetbol</p>
+                <p class="price">$3,077 <span class="old-price">$3,799</span></p>
+            </div
+            >
+            <div class="purchase-box">
+            <select id="talla-kd19" class="select-size">
+               <option value="">Selecciona talla</option>
+                <option value="23">23 cm</option>
+                <option value="24">24 cm</option>
+                <option value="25">25 cm</option>
+                <option value="26">26 cm</option>
+                <option value="27">27 cm</option>
+                <option value="28">28 cm</option>
+                <option value="29">29 cm</option>
+            </select>
+               <button class="btn-comprar" onclick="comprarProducto('KD19 Black', 3077, 'KD 19 black.jpeg', 'talla-kd19')">Comprar</button>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        function comprarProducto(nombre, precio, imagen, selectId) {
+        const talla = document.getElementById(selectId).value;
+
+     if (!talla) {
+        alert("Por favor selecciona una talla antes de comprar.");
+        return;
+     }
+
+     // Guardar los datos del producto elegido
+     const producto = {
+        nombre: nombre,
+        precio: precio,
+        imagen: imagen,
+        talla: talla
+     };
+
+      // Guardar en la memoria del navegador y redirigir a carrito.html
+      localStorage.setItem('productoComprado', JSON.stringify(producto));
+     window.location.href = 'carrito.html';
+     }
+   </script>
+</body>
+</html>
